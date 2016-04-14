@@ -1,10 +1,17 @@
 {
+
 	"name": "My first google chrome extension",
 	"version": "1.0",
 	"manifest_version": 2,
 	"description": "This is my first google chrome extension",
+
 	"browser_action": {
-		"default_icon": "myicon.png"
-	}
+		"default_icon": "myicon.png",
+		"default_popup": "mycalc.html"
+	},
+	"permissions":[
+	 "activeTab",
+	 "https://ajax.googleapis.com/"
+	]
 
 }
